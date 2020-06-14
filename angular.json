@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "seko-store"
+    }
+  },
+  "defaultProject": "seko-store",
+  "cli": {
+    "analytics": "7373ea54-54ea-48f7-862e-7f89957ecccb"
+  }
 }
