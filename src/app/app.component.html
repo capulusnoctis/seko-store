@@ -1,6 +1,17 @@
-<input type="text" [(ngModel)]="title">
-{{ title }}
+<input id="names" type="text" [(ngModel)]="nombre">
 
-<div *ngIf="title === 'axel'">
+<!--{{ title }}-->
+
+<div *ngIf="nombre === 'axel'">
   Este es un div
 </div>
+
+<button (click)="addItem(nombre)">Add name</button>
+
+<ul>
+  <li *ngIf="items.length === 0">La lista está vacía</li>
+  <li *ngFor="let name of items; index as i">
+    {{i+1}}. {{ name }}
+    <button (click)="delteItem(i)">Delete</button>
+  </li>
+</ul>
