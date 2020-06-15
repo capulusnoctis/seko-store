@@ -2,7 +2,7 @@
 
 {{ nombre }}
 
-<div *ngIf="nombre === 'axel'">
+<div *ngIf="nombre === 'paco'">
   Este es axel
 </div>
 <div *ngIf="nombre === 'pedro'">
@@ -13,7 +13,7 @@
 </div>
 
 <div [ngSwitch]="nombre">
-  <p *ngSwitchCase="'axel'">Este es axel</p>
+  <p *ngSwitchCase="'paco'">Este es paco</p>
   <p *ngSwitchCase="'pedro'">Este es pedro</p>
   <p *ngSwitchCase="'ignacio'">Este es ignacio</p>
   <p *ngSwitchDefault>No hay match</p>
@@ -22,7 +22,7 @@
 <button (click)="addItem(nombre)">Add name</button>
 
 <ul>
-  <li *ngIf="items.length === 0">La lista está vacía</li>
+  <li *ngIf="items.length === 0">La lista estï¿½ vacï¿½a</li>
   <li *ngFor="let name of items; index as i">
     {{i+1}}. {{ name }}
     <button (click)="delteItem(i)">Delete</button>

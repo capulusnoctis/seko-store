@@ -7,7 +7,7 @@ import { Product } from './product.model';
 })
 export class AppComponent {
   title = 'seko-store';
-  nombre = 'Axel';
+  nombre = 'paco';
   items = ['juanito', 'lila', 'axel'];
   products: Product[] = [
     {
