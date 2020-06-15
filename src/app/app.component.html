@@ -3,7 +3,7 @@
 {{ nombre }}
 
 <div *ngIf="nombre === 'paco'">
-  Este es axel
+  Este es paco
 </div>
 <div *ngIf="nombre === 'pedro'">
   Este es pedro
@@ -22,7 +22,7 @@
 <button (click)="addItem(nombre)">Add name</button>
 
 <ul>
-  <li *ngIf="items.length === 0">La lista est� vac�a</li>
+  <li *ngIf="items.length === 0">La lista está vacía</li>
   <li *ngFor="let name of items; index as i">
     {{i+1}}. {{ name }}
     <button (click)="delteItem(i)">Delete</button>
