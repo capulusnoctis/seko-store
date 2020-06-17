@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'seko-store';
   nombre = 'paco';
   items = ['juanito', 'lila', 'axel'];
+  power = 3;
   products: Product[] = [
     {
       id: '1',
@@ -55,7 +56,7 @@ export class AppComponent {
   ];
 
   addItem(nuevoItem: string) {
-    this.items.push(nuevoItem)
+    this.items.push(nuevoItem);
   }
   delteItem(index: number){
     this.items.splice(index, 1);

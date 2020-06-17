@@ -21,6 +21,8 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy {
   @Input() producto: Product;
   @Output() productClicked: EventEmitter<string> = new EventEmitter();
 
+  today = new Date();
+
   constructor() {
     console.log('Constructor!');
   }
@@ -30,7 +32,7 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy {
   // }
 
   ngOnInit() {
-    console.log('ngOnInit!')
+    console.log('ngOnInit!');
   }
 
   ngDoCheck() {

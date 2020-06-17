@@ -1,10 +1,36 @@
+$textColor: #363636;
+$fontFamily: 'Segoe UI', Arial, sans-serif;
+
 :host {
-  margin: 2px;
-  border: 1px solid black;
+  margin: 4px;
   border-radius: 5px;
   display: block;
+  background-color: #e7e7e7;
+  text-align: justify;
+  color: $textColor;
+  padding: 10px;
+  font-family: $fontFamily;
+}
+
+h3 {
+  text-align: center;
 }
 
 img {
   max-width: 100%;
+  margin: auto;
+  height: 200px;
+  display: block;
+}
+
+button {
+  display: block;
+  padding: 6px 12px;
+  outline: none;
+  border: 0;
+  background-color: #162969;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 4px auto;
 }
