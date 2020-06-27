@@ -21,7 +21,7 @@ export class ProductDetailComponent implements OnInit {
       console.log(params);
       const id = params.id;
       this.product = this.productsService.getProduct(id);
-      console.log(product);
+      console.log(this.product);
     });
   }
 
