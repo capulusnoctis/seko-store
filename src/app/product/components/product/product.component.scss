@@ -1,23 +1,40 @@
-$textColor: #363636;
-$fontFamily: 'Segoe UI', Arial, sans-serif;
+/*   $textColor: #363636;
+  $fontFamily: 'Segoe UI', Arial, sans-serif;
 
-:host {
-  margin: 4px;
-  border-radius: 5px;
-  display: block;
-  text-align: justify;
-  color: $textColor;
-  padding: 10px;
-}
+  :host {
+    margin: 4px;
+    border-radius: 5px;
+    display: block;
+    text-align: justify;
+    color: $textColor;
+    padding: 10px;
+  }
 
-h3 {
-  text-align: center;
-}
+  h3 {
+    text-align: center;
+  }
+*/
+  :host {
+    margin: 50px 20px;
+  }
 
-img {
-  max-width: 100%;
-  margin: auto;
-  height: 200px;
-  display: block;
-}
+  img {
+    max-width: 100%;
+    margin: auto;
+    height: 200px;
+    display: block;
+  }
 
+ /*  .crop-image {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50);
+      max-width: 100%;
+    }
+  } */
