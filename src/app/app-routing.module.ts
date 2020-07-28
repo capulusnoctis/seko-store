@@ -22,12 +22,12 @@ const routes: Routes = [
       },
       {
         path: 'products',
-        canActivate: [AdminGuard],
+        // canActivate: [AdminGuard],
         loadChildren: () => import('./product/product.module').then(m => m.ProductModule)
       },
       {
         path: 'contact',
-        canActivate: [AdminGuard],
+        // canActivate: [AdminGuard],
         loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
       },
       {

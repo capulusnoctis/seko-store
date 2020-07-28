@@ -18,11 +18,49 @@ export class ProductDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {
-      console.log(params);
       const id = params.id;
-      this.product = this.productsService.getProduct(id);
-      console.log(this.product);
+      this.fetchProduct(id);
+      // this.product = this.productsService.getProduct(id);
     });
   }
 
+  fetchProduct(id: string) {
+    this.productsService.getProduct(id)
+    .subscribe(product => {
+      console.log(product);
+      this.product = product;
+    });
+  }
+
+  createProduct() {
+    const newProduct: Product = {
+      id: '223',
+      title: 'new desde Angular',
+      image: 'https://bit.ly/31vOLH8',
+      price: 3000,
+      description: 'Nuevo producto chilero!'
+    };
+    this.productsService.createProduct(newProduct)
+    .subscribe(product => {
+      console.log(product);
+    });
+  }
+
+  updateProduct() {
+    const updateProduct: Partial<Product> = {
+      title: 'Cafe Guatemala',
+      description: 'El cafe mas delicioso'
+    };
+    this.productsService.updateProduct('223', updateProduct)
+    .subscribe(product => {
+      console.log(product);
+    });
+  }
+
+  deleteProduct() {
+    this.productsService.deleteProduct('223')
+    .subscribe(rta => {
+      console.log(rta);
+    });
+  }
 }
