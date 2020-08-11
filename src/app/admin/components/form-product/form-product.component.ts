@@ -26,7 +26,7 @@ export class FormProductComponent implements OnInit {
 
   saveProduct(event: Event) {
     event.preventDefault();
-    if(this.form.valid) {
+    if (this.form.valid) {
       const product = this.form.value;
       this.productsService.createProduct(product)
       .subscribe((newProduct) => {
